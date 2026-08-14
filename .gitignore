@@ -43,3 +43,6 @@ next-env.d.ts
 !.vscode/settings.json
 !.vscode/extensions.json
 .idea/
+
+# local notes
+LOCAL_NOTES.md
