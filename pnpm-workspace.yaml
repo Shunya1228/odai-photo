@@ -1,0 +1,10 @@
+# pnpm 11 から、ビルドスクリプトの許可設定は pnpm-workspace.yaml に書く方式に変更された。
+# 参考: https://pnpm.io/settings
+#
+# このファイルの内容は `pnpm approve-builds` 実行で対話的に編集される。
+# ビルドスクリプト(postinstall など任意コード実行)を許可するパッケージのみ true にする。
+#  - sharp: Next.js の画像最適化(next/image)で使うネイティブ画像処理ライブラリ
+#  - unrs-resolver: eslint-config-next が依存するモジュール解決ライブラリ
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

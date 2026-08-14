@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/*
+ * デザイントークン
+ * Phase 1 では最小限。Phase 7 で見直す前提。
+ * 落ち着いた大人カジュアル / ライトモード基調 / アクセント1色(暖色)。
+ */
+@theme {
+  --color-background: #fbfaf7;
+  --color-foreground: #1f1d1a;
+  --color-muted: #6f6a63;
+  --color-surface: #ffffff;
+  --color-border: #e8e4dc;
+  --color-accent: #e07a5f;
+  --color-accent-foreground: #ffffff;
+
+  --font-sans:
+    var(--font-geist-sans), "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
